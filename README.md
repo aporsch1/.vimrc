@@ -1,2 +1,2 @@
-# .vimrc
+# .portableVimrc
 My .vimrc in progress
