@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/Users/abeporschet/.vim/UltiSnips'
+let g:netrw_dirhist_6='/Users/abeporschet/projects/hello_world'
+let g:netrw_dirhist_5='/Users/abeporschet/projects/hello_cargo/src'
+let g:netrw_dirhist_4='/Users/abeporschet/opt/anaconda3'
+let g:netrw_dirhist_3='/Users/abeporschet/opt/anaconda3/plugins'
+let g:netrw_dirhist_2='/Users/abeporschet/opt/anaconda3'
+let g:netrw_dirhist_1='/Users/abeporschet/Stat21/RYouWithMe/pooledmaRket'
