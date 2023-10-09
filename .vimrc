@@ -32,45 +32,48 @@ set wildmode=list:longest
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 set t_Co=256
 set background=dark
-colorscheme PaperColor
 " }}}
 
-" PLUGINS ---------------------------------------------------------------- {{{
 call plug#begin('~/.vim/plugged')
-
+Plug 'yuttie/hydrangea-vim'
 Plug 'dense-analysis/ale'
 Plug 'lervag/vimtex'
 Plug 'sheerun/vim-polyglot'
 Plug 'NLKNguyen/papercolor-theme'
-
+Plug 'nordtheme/vim'
+Plug 'ghifarit53/tokyonight-vim'
+Plug 'whatyouhide/vim-gotham'
+Plug 'vim-airline/vim-airline'
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
+Plug 'arzg/vim-colors-xcode'
 Plug 'sirver/ultisnips'
     let g:UltiSnipsExpandTrigger = '<tab>'
     let g:UltiSnipsJumpForwardTrigger = '<tab>'
     let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
     let g:UltiSnipsEditSplit="vertical"
-
+Plug 'tmsvg/pear-tree'
 Plug 'lervag/vimtex'
-    let g:tex_flavor='latex'
-    let g:vimtex_view_method='skim'
-    let g:vimtex_view_skim_sync = 1
-    let g:vimtex_view_skim_activate = 1
-    let g:vimtex_quickfix_mode = 0
-    set conceallevel=1
-    let g:tex_conceal='abdmg'
-
 Plug 'KeitaNakamura/tex-conceal.vim'
     set conceallevel=1
     let g:tex_conceal='abdmg'
     hi Conceal ctermbg=none
-
+set termguicolors
 setlocal spell
 set spelllang=en_us
 inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
-
+Plug 'logico/typewriter-vim'
 call plug#end()
+let g:tex_flavor='latex'
+let g:vimtex_view_method='skim'
+let g:vimtex_view_skim_sync = 1
+let g:vimtex_quickfix_mode = 0
+let g:vimtex_view_skim_activate = 1
+let g:vimtex_compiler_method = 'latexmk'
+set conceallevel=1
+let g:tex_conceal='abdmg'
+
 " }}}
-
-
+colorscheme catppuccin_mocha
 " MAPPINGS --------------------------------------------------------------- {{{
 
 " Mappings code goes here.
